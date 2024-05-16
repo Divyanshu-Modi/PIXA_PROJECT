@@ -1,10 +1,7 @@
 #
 # PIXA PORJECT
 #
-set(SRCS "")
-set(DIRS "")
+set(COMPONENT_SRCS "main.c")
+set(COMPONENT_ADD_INCLUDEDIRS "." "inc/")
 
-list(APPEND SRCS "main.c")
-list(APPEND DIRS "inc/")
-
-idf_component_register(SRCS ${SRCS} INCLUDE_DIRS "." ${DIRS} REQUIRES driver)
+register_component()

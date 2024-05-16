@@ -1,0 +1,22 @@
+menu "PIXA"
+
+	config TEST
+		bool "CONFIG TEST FOR SETTING DEFAULT"
+		help
+			CONFIGURATION FOR TESTING
+
+	config PIXA_SSID
+		string "WIFI ssid for the device to connect"
+		default ""
+		default "Sentinel_Wlan" if TEST
+		help
+			WIFI ssid for the device to connect.
+
+	config PIXA_SSID
+		string "WIFI ssid for the device to connect"
+		default ""
+		default "Sentinel_Wlan" if TEST
+		help
+			WIFI ssid for the device to connect.
+
+endmenu
